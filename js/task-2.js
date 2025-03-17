@@ -1,10 +1,10 @@
 function formatMessage(message, maxLength) {
   const newMessage = message.slice(0, maxLength);
   if (message.length <= maxLength) {
-    console.log(message);
+    return message;
   } else {
     const spanMessage = newMessage + "...";
-    console.log(spanMessage);
+    return spanMessage;
   }
 }
 const form1 = formatMessage("Curabitur ligula sapien", 16);

@@ -3,19 +3,19 @@ function getShippingCost(country) {
   switch (country) {
     case "China":
       const creditChina = "100 credits";
-      console.log(message + creditChina);
+      return message + creditChina;
       break;
     case "Chile":
       const creditChile = "250 credits";
-      console.log(message + creditChile);
+      return message + creditChile;
       break;
     case "Australia":
       const creditAustralia = "170 credits";
-      console.log(message + creditAustralia);
+      return message + creditAustralia;
       break;
     case "Jamaica":
       const creditJamaica = "120 credits";
-      console.log(message + creditJamaica);
+      return message + creditJamaica;
       break;
     default:
       console.log("Sorry, there is no delivery to your country");

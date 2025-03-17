@@ -4,9 +4,9 @@ function checkForSpam(message) {
   const hasSale = newMessage.includes("sale");
   const banWords = hasSale || hasSpam;
   if (banWords) {
-    console.log(true);
+    return true;
   } else {
-    console.log(false);
+    return false;
   }
 }
 const res1 = checkForSpam("Latest technology news");
