@@ -1,15 +1,12 @@
 function formatMessage(message, maxLength) {
+  const newMessage = message.slice(0, maxLength);
   if (message.length <= maxLength) {
-    return message, maxLength;
-    console.log(message, maxLength);
+    console.log(message);
   } else {
-    const newMessage = message.slice(0, maxLength);
-    const spanMessage = (newMessage += "...");
-    return spanMessage, maxLength;
-    console.log(spanMessage, maxLength);
+    const spanMessage = newMessage + "...";
+    console.log(spanMessage);
   }
 }
-
 const form1 = formatMessage("Curabitur ligula sapien", 16);
 const form2 = formatMessage("Curabitur ligula sapien", 23);
 const form3 = formatMessage("Vestibulum facilisis purus nec", 20);
